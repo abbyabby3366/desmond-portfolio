@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Desmond Giam — I build the software my business runs on</title>
+<meta name="description" content="Desmond Giam, operator and full-stack engineer in Malaysia. E-signature platforms, WhatsApp automation, voice agents, browser extensions. Built, shipped, and run in production." />
+<link rel="canonical" href="https://desmond.neuron.my/" />
+<meta property="og:title" content="Desmond Giam — operator and full-stack engineer" />
+<meta property="og:description" content="I build the software my business runs on. E-signature, WhatsApp automation, voice agents, extensions." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://desmond.neuron.my/" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23d7ff3e'/><text x='16' y='23' font-size='19' font-family='monospace' font-weight='bold' text-anchor='middle' fill='%23090a06'>D</text></svg>" />
+<link rel="stylesheet" href="/assets/fonts.css" />
+<link rel="stylesheet" href="/assets/site.css" />
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/"><span class="dot"></span> Desmond Giam</a>
+    <nav class="nav-links">
+      <a href="/work.html">Work</a>
+      <a href="/about.html">About</a>
+      <a href="/collab.html">Collaborate</a>
+      <a href="https://github.com/abbyabby3366" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/60122273341" target="_blank" rel="noopener">WhatsApp me</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Kuala Lumpur, Malaysia · building since 2020</p>
+          <h1>I build the software my business <span class="acid">runs on.</span></h1>
+          <p class="lede">I am Desmond Giam, an operator and full-stack engineer. I run a phone rental business in Malaysia, and I wrote every system behind it: e-signature contracts, WhatsApp automation, device tracking, and the internal tools the staff actually use every day.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/work.html">See the work &rarr;</a>
+            <a class="btn" href="https://wa.me/60122273341" target="_blank" rel="noopener">Talk to me on WhatsApp</a>
+          </div>
+        </div>
+        <aside class="hero-side">
+          <dl>
+            <div>
+              <dt>What I do</dt>
+              <dd>Products end to end. <span>Backend, frontend, infra, and the operations that surround them.</span></dd>
+            </div>
+            <div>
+              <dt>Where I am useful</dt>
+              <dd>WhatsApp and SMS systems, document flows, AI features, rescue work on half-finished builds.</dd>
+            </div>
+            <div>
+              <dt>How I work</dt>
+              <dd>Small releases, real users, no throwaway demos. <span>If it ships, I keep it alive.</span></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="stats">
+        <div class="stats-in">
+          <div class="stat"><b>6 yrs</b><span>shipping production code</span></div>
+          <div class="stat"><b>7</b><span>products live right now</span></div>
+          <div class="stat"><b>110</b><span>repositories built</span></div>
+          <div class="stat"><b>1</b><span>business run on them daily</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2 style="margin-top:16px">Things I built, then had to keep alive</h2>
+        </div>
+        <p class="muted">Each of these is in production. Two are open for a look, the rest I can walk you through on a call, live.</p>
+      </div>
+
+      <article class="case reveal">
+        <div class="case-body">
+          <p class="case-tag">Flagship · operations platform</p>
+          <h3>Mobigo: contracts, signatures and WhatsApp in one place</h3>
+          <p>Self-hosted DocuSeal with a WhatsApp session manager bolted on top. Rental agreements go out for signature, come back signed, and the same system sends the reminders, collects the consent forms, and keeps IMEI records straight.</p>
+          <p>Built for my own rental business, so the requirements were never theoretical. It handles CTOS and CBM consent forms, multi-session WhatsApp routing, and a forwarding layer that sends each customer reply to the right staff member.</p>
+          <div class="chips">
+            <span class="chip">TypeScript</span><span class="chip">Node</span><span class="chip">Docker</span>
+            <span class="chip">Postgres</span><span class="chip">Redis</span><span class="chip">DocuSeal</span>
+          </div>
+        </div>
+        <div class="case-media">
+          <div class="shot"><img src="/assets/shots/mobigo-wa.png" alt="Mobigo WhatsApp session manager, showing paired sessions and forwarding agents" loading="lazy" /></div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-body">
+          <p class="case-tag">Product · Chrome extension</p>
+          <h3>DualSub: learn a language while you watch</h3>
+          <p>A Manifest V3 extension for YouTube and streaming sites that shows two subtitle tracks at once, then highlights only the words worth learning at your level. The AI mode translates each line and picks the words to teach in the same call.</p>
+          <p>Live on the Chrome Web Store with a seven-language site, an authenticated study portal, and an eval harness that grades model output against 530 real subtitle lines before any prompt change ships.</p>
+          <div class="chips">
+            <span class="chip">Chrome MV3</span><span class="chip">Astro</span><span class="chip">Express</span>
+            <span class="chip">MongoDB</span><span class="chip">OpenRouter</span>
+          </div>
+          <a class="work-link" href="https://learnwithdualsub.com" target="_blank" rel="noopener">learnwithdualsub.com &rarr;</a>
+        </div>
+        <div class="case-media">
+          <div class="shot"><img src="/assets/shots/dualsub.png" alt="DualSub landing page with dual subtitle demo" loading="lazy" /></div>
+        </div>
+      </article>
+
+      <div class="cards">
+        <div class="card reveal">
+          <p class="k">Real time · voice</p>
+          <h3>Mulatie voice agent</h3>
+          <p>Speech-to-speech agent on Pipecat, running on its own box. Streams audio both ways, handles barge-in, and keeps a Chinese-first interface for its users.</p>
+          <p class="foot">Python · Pipecat · WebRTC · EC2</p>
+        </div>
+        <div class="card reveal">
+          <p class="k">Automation · messaging</p>
+          <h3>WhatsBlast</h3>
+          <p>Multi-session WhatsApp campaign tool. Queues, per-number rate control, Redis-backed session auth, and a dashboard that survives being left running for weeks.</p>
+          <p class="foot">Node · Redis · whatsapp-web.js</p>
+        </div>
+        <div class="card reveal">
+          <p class="k">Hardware adjacent</p>
+          <h3>Bridgly SMS gateway</h3>
+          <p>Control centre for a fleet of Android handsets sending SMS through their own SIMs. Live device heartbeats, CSV bulk sends, and per-SIM routing from one web console.</p>
+          <p class="foot">TypeScript · Android APK · websockets</p>
+        </div>
+        <div class="card reveal">
+          <p class="k">Local AI</p>
+          <h3>Zimu subtitle translator</h3>
+          <p>Video subtitle translation that runs on a local RTX 4060. Burns bilingual subtitles into the file without uploading anything to a cloud service.</p>
+          <p class="foot">Python · ffmpeg · local GPU</p>
+        </div>
+        <div class="card reveal">
+          <p class="k">Open source</p>
+          <h3>WhatsApp agent gateway</h3>
+          <p>A WhatsApp gateway plus a receiver that lets an AI agent hold real conversations, with session recovery, history, and tool calls wired in.</p>
+          <p class="foot">TypeScript · Baileys · Node</p>
+        </div>
+        <div class="card reveal">
+          <p class="k">Under NDA</p>
+          <h3>High-traffic platforms</h3>
+          <p>Several white-label real-time web platforms I built and still maintain. I do not name clients. I can talk through the architecture, the load profile, and the mistakes.</p>
+          <p class="foot">Ask me on a call</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow">How I work</p>
+          <h2 style="margin-top:16px">Operator first, engineer second</h2>
+        </div>
+      </div>
+      <div class="approach">
+        <div class="reveal">
+          <p class="n">01</p>
+          <h3>Ship something that runs today</h3>
+          <p>I would rather hand you a working slice this week than a design document this month. Every project I keep has real users pressing real buttons, which is the only review that matters.</p>
+        </div>
+        <div class="reveal">
+          <p class="n">02</p>
+          <h3>I run what I build</h3>
+          <p>My own business depends on these systems. That changes the decisions: boring infrastructure, loud alarms, and a rollback path before a feature is allowed near production.</p>
+        </div>
+        <div class="reveal">
+          <p class="n">03</p>
+          <h3>No handoff gap</h3>
+          <p>Backend, frontend, DNS, certificates, the phone that sends the SMS. If it is part of getting the thing live, it is part of the job, not someone else's ticket.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow">Daily tools</p>
+      <div class="stack" style="margin-top:22px">
+        <span>TypeScript</span><span>Node</span><span>Python</span><span>Go</span><span>PHP</span>
+        <span>Astro</span><span>Svelte</span><span>Express</span><span>MongoDB</span><span>Postgres</span>
+        <span>Redis</span><span>Docker</span><span>nginx</span><span>Cloudflare</span><span>Linux</span>
+        <span>WhatsApp Web protocol</span><span>DocuSeal</span><span>Pipecat</span><span>OpenRouter</span><span>Gemini</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="band reveal">
+        <div>
+          <h2>Got a system that needs to actually work?</h2>
+          <p class="muted" style="margin-top:14px;max-width:52ch">I take on a small number of builds and rescues at a time, usually WhatsApp automation, internal tools, and AI features that have to survive contact with real users.</p>
+        </div>
+        <a class="btn btn-primary" href="/collab.html">See how to work with me &rarr;</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>
+      <a class="brand" href="/" style="margin-bottom:10px"><span class="dot"></span> Desmond Giam</a>
+      <p class="small">Kuala Lumpur, Malaysia. Building software for businesses that have to run tomorrow.</p>
+    </div>
+    <div class="foot-links">
+      <a href="/work.html">Work</a>
+      <a href="/about.html">About</a>
+      <a href="/collab.html">Collaborate</a>
+      <a href="https://github.com/abbyabby3366" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:desmondgiam02@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

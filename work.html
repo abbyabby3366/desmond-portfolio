@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Work — Desmond Giam</title>
+<meta name="description" content="Production systems: e-signature and WhatsApp operations, Chrome extensions, voice agents, SMS gateways, and automation tools." />
+<link rel="canonical" href="https://desmond.neuron.my/work.html" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23d7ff3e'/><text x='16' y='23' font-size='19' font-family='monospace' font-weight='bold' text-anchor='middle' fill='%23090a06'>D</text></svg>" />
+<link rel="stylesheet" href="/assets/fonts.css" />
+<link rel="stylesheet" href="/assets/site.css" />
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/"><span class="dot"></span> Desmond Giam</a>
+    <nav class="nav-links">
+      <a href="/work.html" style="color:var(--ink)">Work</a>
+      <a href="/about.html">About</a>
+      <a href="/collab.html">Collaborate</a>
+      <a href="https://github.com/abbyabby3366" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/60122273341" target="_blank" rel="noopener">WhatsApp me</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap page-head">
+    <p class="eyebrow">Work</p>
+    <h1>Eight systems, all of them running</h1>
+    <p class="lede">Most of my code is private because most of it runs businesses. Here is what each system does, what it is built on, and what I can show you live.</p>
+  </div>
+
+  <section style="padding-top:20px">
+    <div class="wrap">
+
+      <div class="work-item reveal">
+        <div class="meta">
+          <span>01 / OPERATIONS PLATFORM</span>
+          <span>2024 &rarr; now</span>
+          <span class="acid">production</span>
+        </div>
+        <div>
+          <h3>Mobigo</h3>
+          <p>Contract signing and WhatsApp operations for my phone rental business. A self-hosted DocuSeal instance issues the rental agreements, the same stack sends the signing links, and a WhatsApp session manager keeps every customer conversation attached to the right agreement.</p>
+          <ul>
+            <li>Self-hosted e-signature with custom agreement templates, including CTOS and CBM consent forms</li>
+            <li>Multiple WhatsApp sessions, each with its own forwarding rules and staff routing</li>
+            <li>IMEI level device records, so a returned phone is provably the one that went out</li>
+            <li>Submission inbox that links a signed PDF back to the customer record automatically</li>
+          </ul>
+          <p class="small" style="margin-top:14px">TypeScript, Node, Docker, Postgres, Redis, MongoDB, DocuSeal</p>
+          <a class="work-link" href="https://mobigo.io7.my" target="_blank" rel="noopener">mobigo.io7.my &rarr;</a>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <div class="meta">
+          <span>02 / BROWSER EXTENSION</span>
+          <span>2025 &rarr; now</span>
+          <span class="acid">live on the store</span>
+        </div>
+        <div>
+          <h3>Learn Language with DualSub</h3>
+          <p>A Chrome extension that puts two subtitle tracks on the same video and teaches one word at a time. Three modes: a native secondary track, YouTube's own caption translation, or live AI translation. In AI mode a single structured call translates the line and picks the words worth learning together.</p>
+          <ul>
+            <li>Word picks are graded across a shared CEFR, HSK, JLPT and TOPIK scale, then highlighted in both languages</li>
+            <li>Every highlight is saved automatically under its dictionary form, so plurals and conjugations collapse into one word</li>
+            <li>Marketing site in seven languages, Google sign-in, and a study portal with cloud word sync and quizzes</li>
+            <li>Evaluation harness: 530 real subtitle lines across 14 language pairs, graded blind by a second model, before a prompt is allowed to become the default</li>
+          </ul>
+          <p class="small" style="margin-top:14px">Chrome MV3, Astro, Express, MongoDB, OpenRouter</p>
+          <a class="work-link" href="https://learnwithdualsub.com" target="_blank" rel="noopener">learnwithdualsub.com &rarr;</a>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <div class="meta">
+          <span>03 / VOICE</span>
+          <span>2026</span>
+          <span class="acid">production</span>
+        </div>
+        <div>
+          <h3>Mulatie voice agent</h3>
+          <p>A real-time speech-to-speech agent built on Pipecat and deployed to its own box. Audio streams both directions, the agent tolerates being interrupted mid sentence, and the product is wrapped in a Chinese-first interface for its users.</p>
+          <ul>
+            <li>Streaming voice pipeline with turn detection and barge-in</li>
+            <li>Single-purpose server with its own deploy path and health checks</li>
+            <li>Key-gated access and per-user session handling</li>
+          </ul>
+          <p class="small" style="margin-top:14px">Python, Pipecat, WebRTC, Docker, AWS</p>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <div class="meta">
+          <span>04 / MESSAGING AUTOMATION</span>
+          <span>2026</span>
+          <span class="acid">production</span>
+        </div>
+        <div>
+          <h3>WhatsBlast</h3>
+          <p>WhatsApp campaign tool built for multiple paired numbers at once. It queues campaigns, paces sends so a number does not get flagged, and keeps session credentials in Redis so a restart does not cost a re-pair.</p>
+          <ul>
+            <li>Multi-session management with per-number throughput control</li>
+            <li>Queue with retries and failure accounting per recipient</li>
+            <li>Redis-only session state, which makes redeploys painless</li>
+          </ul>
+          <p class="small" style="margin-top:14px">Node, Redis, whatsapp-web.js, Docker</p>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <div class="meta">
+          <span>05 / HARDWARE + WEB</span>
+          <span>2026</span>
+          <span class="acid">production</span>
+        </div>
+        <div>
+          <h3>Bridgly SMS gateway</h3>
+          <p>A control centre for a fleet of Android handsets that send SMS through their own SIM cards, plus the Android app that runs on each phone. Devices report battery, signal and last heartbeat, and the console routes each campaign to the right device and SIM.</p>
+          <ul>
+            <li>Live device registry with heartbeat and battery telemetry</li>
+            <li>Single sends and CSV bulk uploads with per-message status</li>
+            <li>Per-SIM routing and transmission logs for every message</li>
+          </ul>
+          <p class="small" style="margin-top:14px">TypeScript, websockets, Android APK, Docker</p>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <div class="meta">
+          <span>06 / LOCAL AI TOOLING</span>
+          <span>2026</span>
+          <span>personal build</span>
+        </div>
+        <div>
+          <h3>Zimu subtitle translator</h3>
+          <p>A desktop tool for translating and burning bilingual subtitles into video files, running entirely on a local RTX 4060. No cloud upload, no per-minute billing, which matters when the source material is long.</p>
+          <ul>
+            <li>Local transcription and translation pipeline</li>
+            <li>Bilingual subtitle burn-in with styling control</li>
+            <li>Chunked processing so long videos survive a laptop sleep</li>
+          </ul>
+          <p class="small" style="margin-top:14px">Python, ffmpeg, local GPU inference</p>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <div class="meta">
+          <span>07 / OPEN SOURCE</span>
+          <span>2026</span>
+          <span class="acid">public repo</span>
+        </div>
+        <div>
+          <h3>WhatsApp agent gateway</h3>
+          <p>A two-part open-source kit: a WhatsApp gateway that owns the session, and a receiver that lets an AI agent hold a real conversation through it. Session recovery, message history, tool calls, and a clean seam between the messaging layer and the agent.</p>
+          <ul>
+            <li>Baileys-based gateway with reconnection and re-pair handling</li>
+            <li>Receiver process that turns messages into agent turns and sends replies back</li>
+            <li>History store so conversations survive restarts</li>
+          </ul>
+          <p class="small" style="margin-top:14px">TypeScript, Baileys, Node</p>
+          <a class="work-link" href="https://github.com/abbyabby3366/whatsapp-agent-hermes" target="_blank" rel="noopener">github.com/abbyabby3366 &rarr;</a>
+        </div>
+      </div>
+
+      <div class="work-item reveal">
+        <div class="meta">
+          <span>08 / UNDER NDA</span>
+          <span>ongoing</span>
+          <span>anonymised</span>
+        </div>
+        <div>
+          <h3>White-label real-time platforms</h3>
+          <p>Several high-traffic, real-money web platforms built and maintained for clients who do not want their names on a portfolio. Heavy real-time state, payment flows, and load that does not forgive sloppy queries.</p>
+          <ul>
+            <li>Real-time interfaces with live odds, balances and session state</li>
+            <li>Cache and query work to keep response times flat under load</li>
+            <li>Zero-downtime deploys, because the traffic never stops for maintenance</li>
+          </ul>
+          <p class="small" style="margin-top:14px">Node, PHP, Redis, MySQL, nginx</p>
+          <p class="small" style="margin-top:8px">Happy to walk through architecture and trade-offs on a call. No client names, no screenshots.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="band reveal">
+        <div>
+          <h2>Want the live tour instead?</h2>
+          <p class="muted" style="margin-top:14px;max-width:50ch">I can screen share and click through any of these in a few minutes, including the admin sides and the parts that are private.</p>
+        </div>
+        <a class="btn btn-primary" href="https://wa.me/60122273341" target="_blank" rel="noopener">Book a walkthrough &rarr;</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>
+      <a class="brand" href="/" style="margin-bottom:10px"><span class="dot"></span> Desmond Giam</a>
+      <p class="small">Kuala Lumpur, Malaysia. Building software for businesses that have to run tomorrow.</p>
+    </div>
+    <div class="foot-links">
+      <a href="/work.html">Work</a>
+      <a href="/about.html">About</a>
+      <a href="/collab.html">Collaborate</a>
+      <a href="https://github.com/abbyabby3366" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:desmondgiam02@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
