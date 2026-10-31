@@ -26,11 +26,18 @@ python3 -m http.server 8090
 ```
 
 Pushes to `root@172.236.152.141:/var/www/desmond.neuron.my` using
-`~/.secrets/ssh/white`. Cloudflare proxies `desmond.neuron.my` to that box and
-terminates TLS, so no certificate handling is needed on the server.
+`~/.secrets/ssh/white`.
 
-nginx vhost: `desmond-neuron-my` in `/etc/nginx/sites-enabled/`, `root` set to the
-directory above, `index index.html`, `error_page 404 /404.html`.
+- DNS: `desmond.neuron.my` A record in the neuron.my Cloudflare zone points at
+  `172.236.152.141`, **DNS only (grey cloud)**. Do not re-enable the proxy without
+  checking the zone SSL mode first: nginx 301s port 80 to 443 after certbot, so a
+  Flexible SSL mode would redirect-loop.
+- TLS: Let's Encrypt via certbot, cert at
+  `/etc/letsencrypt/live/desmond.neuron.my/`, renewed by the box's timer. Re-issuing
+  needs the record grey-clouded (HTTP-01).
+- nginx vhost: `/etc/nginx/sites-available/desmond-neuron-my` (copy kept in
+  `deploy/nginx-desmond.conf`), symlinked into `sites-enabled`, `root` set to the
+  directory above, `try_files $uri $uri.html`, `error_page 404 /404.html`.
 
 ## Content rules
 
